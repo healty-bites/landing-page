@@ -39,20 +39,6 @@ a {
     transition: 0.3s color;
 }
 
-.login-button {
-    background-color: #C6F5D4;
-    color: #000;
-    font-size: 14px;
-    padding: 8px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: 0.3s background-color;
-}
-
-.login-button:hover {
-    background-color: #A3E4B7;
-}
-
 .navbar-toggler {
     border: none;
     font-size: 1.25rem;
@@ -64,17 +50,25 @@ a {
 }
 
 .nav-link {
-    color: #666777;
     font-weight: 500;
     position: relative;
 }
+
 
 .nav-link:hover, .nav-link.active {
     color: #000;
 }
 
-@media (min-width: 991px) {
-    .nav-link::before {
+.login-button {
+    background-color: var(--c-brand);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+@media (max-width: 991px) {
+    .nav-link::before, .sesion::before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -91,7 +85,20 @@ a {
         visibility: visible;
         width: 100%;
     }
+    
+    .sesion {
+        margin-top: 40px;
+    }
+
+    .sesion-li {
+        margin-top: 10px;
+    }
 }
+
+.sesion {
+    margin-left: 20px;
+}
+
 
 /* HERO */
 #hero {
