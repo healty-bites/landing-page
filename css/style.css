@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #2E8B57;
+    --secondary-color: #A3E4B7;
+    --tertiary-color: #C6F5D4;
+    --dark-color: #333;
+    --light-color: #fff;
+}
+
+/* Navbar */
 .navbar {
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -64,4 +73,12 @@
         visibility: visible;
         width: 100%;
     }
+}
+
+/* HERO */
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438)), url(../assets/images/features/image1.jpg);
+    background-position: center;
+    background-size: cover;
 }
