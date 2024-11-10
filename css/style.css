@@ -1,7 +1,7 @@
 :root {
     --c-dark: #212529;
     --c-brand: #2E8B57;
-    --c-brand-light: #6970dd;
+    --c-brand-light: #A3E4B7;
     --c-brand-rgb: 0, 51, 0;
     --c-body: #727272;
     --font-base: "ClashDisplay", sans-serif;
@@ -176,4 +176,42 @@
     bottom: -14px;
     background-color: white;
     transform: rotate(45deg);
+}
+
+/* TEAM */
+.team-member-content {
+    background-color: var(--c-brand-light);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    width: calc(100% - 50px);
+    transform: translateX(-50%);
+    padding: 20px;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.team-member:hover .team-member-content {
+    opacity: 1;
+    bottom: 0px;
+}
+
+/* IMAGE ZOOM */
+.image-zoom {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+     transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(0.9);
 }
