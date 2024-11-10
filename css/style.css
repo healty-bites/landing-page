@@ -1,3 +1,10 @@
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    transition: 0.3s background-color;
+}
+
 .navbar-brand {
     font-weight: 500;
     color: #2E8B57;
